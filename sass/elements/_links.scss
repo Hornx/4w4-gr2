@@ -23,16 +23,16 @@
 		outline: 0;
 	}
 }
-@mixin ajoutMixin {
-	display: inline-block;
+@mixin ajoutMixin(){
+display: inline-block;
 	text-indent: -99999em;
 	overflow: hidden;
-	text-align: left;
-	margin: {
-      left: -2px;
-      right: 2em;
-}
- }
+	text-align: left;	
+} 
+	
+	
+	
+ 
 
 
 a {
@@ -55,10 +55,25 @@ a {
 
 .menu-item{
 	a{
-		@include ajoutMixin(){
-			color:yellow;
+		@include ajoutMixin($color__link__header-visited){
+			
 		} 
 	}
 	
 }
 
+@mixin text($font-size,$color,$bg-color) {
+   font-size: $font-size;
+   color: $color;
+   background: $bg-color;
+}
+
+.text1 {
+	// ($font-size,$color,$bg-color)
+@include text(3rem,green , black);
+}
+
+.formation__titre {
+	// ($font-size,$color,$bg-color)
+@include text(5em,red , transparent);
+}
