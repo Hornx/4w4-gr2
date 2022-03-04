@@ -23,6 +23,16 @@
 		outline: 0;
 	}
 }
+@mixin ajoutMixin {
+	display: inline-block;
+	text-indent: -99999em;
+	overflow: hidden;
+	text-align: left;
+	margin: {
+      left: -2px;
+      right: 2em;
+}
+ }
 
 
 a {
@@ -41,5 +51,14 @@ a {
 	@include links(	$color__link__header,
 					$color__link__header-visited, 
 					$color__link__header-hover );
+}
+
+.menu-item{
+	a{
+		@include ajoutMixin(){
+			color:yellow;
+		} 
+	}
+	
 }
 
