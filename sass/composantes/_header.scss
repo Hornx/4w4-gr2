@@ -1,36 +1,41 @@
 .site__header {
   display: flex;
   flex-direction: column;
-    background-color: $color__background-header;
-    color: $color__font-header;
-    padding-left: 10px;
-    @media screen and(min-width : 700px){
-      flex-direction: row;
-      align-items: center;
-    }
-    &__titre{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+  background-color: $color__background-header;
+  color: $color__font-header;
+  // padding: 10px 20px 10px 40px;
 
-    .header__titre {
-      font-size: clamp(2rem, 2vw, 4rem);
-      font-family: $font__titre;
-      padding-left: 10px;
-    }
-    .header__description {
-      font-size: clamp(2rem, 2vw, 2rem);
-      font-family: $font__main;
-      color: $color__font-header;
-      padding-left: 10px;
-    }
+  @media screen and (min-width: 700px){
+    flex-direction: row;
+    align-items: center;
   }
-  .util{
-    display:flex;
-    flex-direction: column;
-    justify-items: center;
-    @media screen and (min-width: 700px) {
-      margin-left: auto;
-    }
+  &__titre {
+    display : flex;
+
+    align-items: center;
+  
   }
+  .header__titre a {
+    font-size: clamp(2rem, 4vw, 8rem);
+    font-family: $font__titre;
+    padding-left : 10px;
+  }
+  .header__description {
+    font-size: clamp(1rem, 2vw, 2rem);
+    font-family: $font__main;
+    color : $color__font-header;
+    padding-left : 10px;
+  }
+}
+
+.util{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width : 90%;
+  @media screen and (min-width : 700px){
+    margin-left : auto;
+    width : 350px;
+  }
+  
+}

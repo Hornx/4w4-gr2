@@ -23,16 +23,53 @@
 		outline: 0;
 	}
 }
-@mixin ajoutMixin(){
-display: inline-block;
-	text-indent: -99999em;
-	overflow: hidden;
-	text-align: left;	
-} 
-	
-	
-	
- 
+
+@mixin links__menu(	$couleur, 
+					$couleur--visited, 
+					$couleur--hover,
+					$background,
+					$background--visited,
+					$background--hover)
+{	color: $couleur;
+	background-color: $background;
+	svg { // .site__footer__menu__ul .menu-item a svg
+		color : $couleur;
+	  }
+
+	&:visited {
+		color: $couleur--visited;
+		background-color: $background--visited;
+		svg { // .site__footer__menu__ul .menu-item a svg
+			color : $couleur--visited;
+		  }
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $couleur--hover;
+		background-color: $background--hover;
+
+		svg { // .site__footer__menu__ul .menu-item a svg
+			color: $couleur--hover;
+		  }
+
+		
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
+
+	}
+
+}
+
+
 
 
 a {
@@ -40,40 +77,33 @@ a {
 					$color__link-visited, 
 					$color__link-hover )
 }
-
+/*
  .site__footer a{
 	@include links(	$color__link__footer,
 					$color__link__footer-visited, 
 					$color__link__footer-hover );
 }
-
+*/
 .header__titre a{
 	@include links(	$color__link__header,
 					$color__link__header-visited, 
 					$color__link__header-hover );
 }
 
-.menu-item{
-	a{
-		@include ajoutMixin($color__link__header-visited){
-			
-		} 
-	}
-	
+.site__footer .menu-item a{
+	@include links__menu(	$color__link__footer__menu,
+					$color__link__footer__menu-visited, 
+					$color__link__footer__menu-hover,
+					$background__link__footer__menu,
+					$background__link__footer__menu-visited, 
+					$background__link__footer__menu-hover );
 }
 
-@mixin text($font-size,$color,$bg-color) {
-   font-size: $font-size;
-   color: $color;
-   background: $bg-color;
-}
-
-.text1 {
-	// ($font-size,$color,$bg-color)
-@include text(3rem,green , black);
-}
-
-.formation__titre {
-	// ($font-size,$color,$bg-color)
-@include text(5em,red , transparent);
+.site__barre .menu-item a{
+	@include links__menu(	$color__link__principal__menu,
+					$color__link__principal__menu-visited, 
+					$color__link__principal__menu-hover,
+					$background__link__principal__menu,
+					$background__link__principal__menu-visited, 
+					$background__link__principal__menu-hover );
 }

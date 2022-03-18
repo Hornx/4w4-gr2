@@ -1,28 +1,67 @@
-.site__footer{
-display: flex;
-flex-direction: column;
+/*
+<footer class="site__footer">
+    <!-- première rangé de colonne -->
+    <div class="site__footer__colonne">
+        <section class="footer__article">
+            <h2>Titre 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est corrupti soluta vitae excepturi exercitationem dicta unde doloremque quisquam suscipit dolores nisi quos, quia expedita, reprehenderit illo commodi error tenetur quidem.</p>
+        </section>
+        <section class="footer__adresse">
+            jjkjk jkjk jkb jkbjk bjk bjk bkbjk j
+        </section>
+        <sectio
+         class="footer__liens">
+        <?php w
+        _nav_menu(array(
+               
+        "menu"=>"externe")); ?>
+        </secti
+        n>
+    </div>
+    <!-- sectio
+     de plusieurs lignes -->
+    <div class=
+    site__footer__ligne">
+        <sectio
+         class="footer__description"></section>
+        <sectio
+         class="footer__nav"></section>
+        <sectio
+         class="copyright"></section>
+        <sectio
+         class="footer__auteur"></section>
+    </div>
+*/
 
-&__colonne{
-  display: flex;
-  flex-direction: row;
-  section{
-    display: flex;
-    flex-direction: column;
-    border: 3px solid white;
-    flex: 0 0 30%;
-  }
-  .footer__article{}
-  .footer__lien{}
-  .footer__adresse{}
-}
-
-&r__ligne{
-  display: flex;
+.site__footer {
+  display : flex;
   flex-direction: column;
-  align-items: center;
+  &__colonne{
+    display : flex;
+    justify-content: space-between;
+    section {
+      display : flex;
+      flex-direction: column;
+      border : 1px solid #ddd;
+      flex : 0 0 30%;
+    }
+    .footer__article{}
+    .footer__lien{}
+    .footer__adresse{}
+  
+  } 
+
+  &__ligne{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
 
- }
+
+
+
 
 
 
@@ -48,15 +87,7 @@ flex-direction: column;
               display : flex;
               align-items: center;
               padding : 3px;
-                svg { // .site__footer__menu__ul .menu-item a svg
-                  color: $color__link__footer;
-                }
-           
-              &:hover {
-                svg { // .site__footer__menu__ul .menu-item a svg
-                  color: $color__link__footer-hover;
-                }
-              }
+              
             }
           }    
        }
