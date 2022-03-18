@@ -22,18 +22,6 @@
         <section class="footer__auteur"></section>
     </div>
 
-    
-
-
-
-
-
-
-
-
-
-
-    
     <p class="footer__presentation">Un site web fait par une élève du TIM à l'aide de Wordpress.</p>
     <h3 class="footer__author">Fait par Marc-Anderson Gilles</h3>
     
@@ -49,7 +37,12 @@ wp_nav_menu(array(
                     "link_before"=>$icone)); ?>
                     <?php get_search_form(); ?>
 
-                    
+        <section class="resume" >
+            <div class="resumeFooter" ><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p></div>
+            <div class="resumeFooter"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p></div>
+            <div class="resumeFooter"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p></div>
+            <div class="resumeFooter"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p></div>
+        </section>            
         <section class="adresseCollege">
    
         <h3>3 800, rue Sherbrooke Est Montréal (Québec) H1X 2A2 | 514 254-7131</h3>

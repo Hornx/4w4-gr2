@@ -25,6 +25,7 @@
     </section>
     <section class="util">
         <?= get_sidebar('entete_1'); ?>
+        <?php get_search_form(); ?>
     <?php // get_search_form(); ?>
     </section>
     
@@ -37,4 +38,5 @@
     </label>
     <?php wp_nav_menu(array("menu"=>"principal",
                             "container"=>"nav")); ?>
+                            
 </section>
