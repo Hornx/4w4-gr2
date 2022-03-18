@@ -62,6 +62,18 @@ function my_register_sidebars() {
         )
     );
 
+    register_sidebar(
+        array(
+            'id'            => 'front_page_1',
+            'name'          => __( 'front page 1' ),
+            'description'   => __( 'Ce sidebar s\'affiche dans l\'entête du site' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
+
 
     register_sidebar(
         array(
@@ -114,6 +126,3 @@ function my_register_sidebars() {
     /* Repeat register_sidebar() code for additional sidebars. */
 }
 
-
-
-?>
