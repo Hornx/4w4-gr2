@@ -727,6 +727,18 @@ COMPOSANTES
   text-align: center;
 }
 
+.copyright {
+  color: #f0f0f0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.adresseCollege {
+  color: #f0f0f0;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .erreur-404 {
   font-size: 5rem;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
