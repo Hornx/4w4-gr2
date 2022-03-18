@@ -15,11 +15,20 @@
 </head>
 <body  <?php body_class("site"); ?>>
 <header class="site__header">
-    <h1 class="header__titre">
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">    
-            <?php bloginfo('name'); ?></h1>
-        </a>
-    <h2 class="header__description"><?php bloginfo('description'); ?></h2>
+    <section class="site__header__titre">
+        <?= get_custom_logo(); ?>
+        <h1 class="header__titre">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">    
+                <?php bloginfo('name'); ?></h1>
+            </a>
+        <h2 class="header__description"><?php bloginfo('description'); ?></h2>
+    </section>
+    <section class="util">
+        <?= get_sidebar('entete_1'); ?>
+    <?php // get_search_form(); ?>
+    </section>
+    
+    
 </header>
 <section class="site__barre">
     <input type="checkbox"  id="chk-burger">
