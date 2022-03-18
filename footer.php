@@ -1,4 +1,32 @@
 <footer class="site__footer">
+    <!-- première rangé de colonne -->
+<div class="site__footer__colonne">
+    <section class="footer__article"></section>
+    	
+<?php get_sidebar( 'footer_colonne_1' ); ?>
+    <h2>Titre 1</h2>
+    <?php get_sidebar( 'footer_colonne_2' ); ?>
+
+    <section class="footer__adresse"></section>
+    <?php get_sidebar( 'footer_colonne_3' ); ?>
+
+    <section class="footer__liens"></section>
+    <?php wp_nav_menu(array(
+                    "menu"=>"externe",
+    )); ?>
+</div>
+<!-- première rangé de ligne -->
+<div class="site__footer__ligne">
+    <section class="description"></section>
+    <section class="footer__nav"></section>
+    <section class="footer__sociaux">
+    <?php get_sidebar( 'footer_ligne_1' ); ?>
+    </section>
+    <section class="copyright"></section>
+    <section class="footer__auteur"></section>
+</div>
+
+
     <h2 class="footer__titre">Le footer</h2>
     <h3 class="footer__author">Fait par Gilles Marc-Anderson</h3>
     
@@ -12,6 +40,7 @@ wp_nav_menu(array(
                     "menu_class"=>"site__footer__menu__ul",
 
                     "link_before"=>$icone)); ?>
+                    <?php get_search_form(); ?>
 </footer>
 <?php wp_footer(); ?>
 </body>
