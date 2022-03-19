@@ -1,0 +1,54 @@
+
+.resumeFooter p{
+    animation : animationCouleur 5s ;
+    animation-name: animationCouleur;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+}
+@keyframes animationCouleur {
+    0%   {color:red; }
+    25%  {color:yellow; }
+    50%  {color:blue; }
+    75%  {color:green; }
+    100% {color:red; }
+  }
+
+  .animationGroupe2 {
+    transition: width 2s, height 2s;
+    animation-name:animationTranslation ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: relative;
+    
+  }
+  @keyframes animationTranslation {
+    0%   {margin-left: 100%;
+      width: 300%;}
+    
+    100% { margin-left: 0%;
+      width: 100%;}
+  }
+
+ 
+  .footer__author:hover{
+    width: 200px;
+    height:200px;
+}
+.footer__author{
+    transition: width 2s, height 2s;
+}
+
+.resume{
+  animation-name: anim-resume;
+  animation-duration: 4s;
+  font-family: $font__main;
+}
+@keyframes anim-resume {
+  0% {
+    transform: scale(30deg);
+  }
+  
+  100% {
+    transform: scale(50deg);  
+  }
+}

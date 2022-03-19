@@ -771,6 +771,36 @@ ANIMATION
   animation: anim-entete 1s forwards;
 }
 
+.animation__bloc:hover {
+  width: 200px;
+  height: 200px;
+}
+
+.animation__bloc {
+  transition: width 2s, height 2s;
+  animation-name: animationBloc;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animationBloc {
+  0% {
+    color: white;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: blue;
+  }
+  75% {
+    color: green;
+  }
+  100% {
+    color: white;
+  }
+}
+
 @keyframes anim-entete {
   0% {
     transform: translateY(-100vh);
@@ -778,6 +808,17 @@ ANIMATION
   100% {
     transform: translateY(10);
   }
+}
+
+.formation__cours:hover {
+  color: white;
+  background-color: black;
+  width: 300px;
+  height: 400px;
+}
+
+.formation__cours {
+  transition: width 2s, height 2s;
 }
 
 /* ---------------------------------------------------------
