@@ -1,6 +1,6 @@
 <?php get_header() ?>
 <main class="site__main">
-    <h1>-------- search.php --------</h1>
+    <!-- Pour permettre de rechercher des mots dans la barre de recherche-->
     <?php if(have_posts()):  ?>
     <?php while(have_posts()): the_post(); ?>    
         <h3>

@@ -4,7 +4,7 @@
   background-color: $color__background-header;
   color: $color__font-header;
   // padding: 10px 20px 10px 40px;
-
+//Media pour adaptation d'écrans
   @media screen and (min-width: 700px){
     flex-direction: row;
     align-items: center;
@@ -33,6 +33,7 @@
   flex-direction: column;
   align-items: center;
   width : 90%;
+  //Media pour adaptation d'écrans
   @media screen and (min-width : 700px){
     margin-left : auto;
     width : 350px;

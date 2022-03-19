@@ -8,7 +8,7 @@
     top : 30px;
 
 }
-
+//Gestion duu menu principal
 #chk-burger {
     display : none;
 }
@@ -44,7 +44,7 @@
         }
     }
 }
-
+//Media pour adaptation d'écrans
 @media screen and (min-width : $largeur__media--tablette){
    .site #burger {
         display : none;

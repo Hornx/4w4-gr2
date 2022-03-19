@@ -662,40 +662,6 @@ COMPOSANTES
   }
 }
 
-/*
-<footer class="site__footer">
-    <!-- première rangé de colonne -->
-    <div class="site__footer__colonne">
-        <section class="footer__article">
-            <h2>Titre 1</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est corrupti soluta vitae excepturi exercitationem dicta unde doloremque quisquam suscipit dolores nisi quos, quia expedita, reprehenderit illo commodi error tenetur quidem.</p>
-        </section>
-        <section class="footer__adresse">
-            jjkjk jkjk jkb jkbjk bjk bjk bkbjk j
-        </section>
-        <sectio
-         class="footer__liens">
-        <?php w
-        _nav_menu(array(
-               
-        "menu"=>"externe")); ?>
-        </secti
-        n>
-    </div>
-    <!-- sectio
-     de plusieurs lignes -->
-    <div class=
-    site__footer__ligne">
-        <sectio
-         class="footer__description"></section>
-        <sectio
-         class="footer__nav"></section>
-        <sectio
-         class="copyright"></section>
-        <sectio
-         class="footer__auteur"></section>
-    </div>
-*/
 .site__footer {
   display: flex;
   flex-direction: column;
@@ -774,6 +740,35 @@ COMPOSANTES
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
+/*Ajout des keyframes pour les animations pour les inclurent dans les classes */
+@keyframes animationBloc {
+  0% {
+    color: white;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: blue;
+  }
+  75% {
+    color: green;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes anim-entete {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(10);
+  }
+}
+
+/*Les animations qui seont intégrer sur la page web */
 .animation {
   display: flex;
   justify-content: space-between;
@@ -802,33 +797,6 @@ ANIMATION
   animation-name: animationBloc;
   animation-duration: 5s;
   animation-iteration-count: infinite;
-}
-
-@keyframes animationBloc {
-  0% {
-    color: white;
-  }
-  25% {
-    color: yellow;
-  }
-  50% {
-    color: blue;
-  }
-  75% {
-    color: green;
-  }
-  100% {
-    color: white;
-  }
-}
-
-@keyframes anim-entete {
-  0% {
-    transform: translateY(-100vh);
-  }
-  100% {
-    transform: translateY(10);
-  }
 }
 
 .formation__cours:hover {

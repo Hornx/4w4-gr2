@@ -1,10 +1,24 @@
 
-.resumeFooter p{
-    animation : animationCouleur 5s ;
-    animation-name: animationCouleur;
-  animation-duration: 4s;
-  animation-iteration-count: 3;
+
+
+/*Ajout des keyframes pour les ajouter dans les classes */
+@keyframes animationTranslation {
+  0%   {margin-left: 100%;
+    width: 300%;}
+  
+  100% { margin-left: 0%;
+    width: 100%;}
 }
+@keyframes anim-resume {
+  0% {
+    transform: scale(30deg);
+  }
+  
+  100% {
+    transform: scale(50deg);  
+  }
+}
+
 @keyframes animationCouleur {
     0%   {color:red; }
     25%  {color:yellow; }
@@ -12,6 +26,13 @@
     75%  {color:green; }
     100% {color:red; }
   }
+
+  .resumeFooter p{
+    animation : animationCouleur 5s ;
+    animation-name: animationCouleur;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+}
 
   .animationGroupe2 {
     transition: width 2s, height 2s;
@@ -21,15 +42,8 @@
     position: relative;
     
   }
-  @keyframes animationTranslation {
-    0%   {margin-left: 100%;
-      width: 300%;}
-    
-    100% { margin-left: 0%;
-      width: 100%;}
-  }
+  
 
- 
   .footer__author:hover{
     width: 200px;
     height:200px;
@@ -42,13 +56,4 @@
   animation-name: anim-resume;
   animation-duration: 4s;
   font-family: $font__main;
-}
-@keyframes anim-resume {
-  0% {
-    transform: scale(30deg);
-  }
-  
-  100% {
-    transform: scale(50deg);  
-  }
 }
