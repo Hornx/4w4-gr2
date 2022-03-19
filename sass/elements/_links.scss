@@ -108,3 +108,25 @@ a {
 					$background__link__principal__menu-visited, 
 					$background__link__principal__menu-hover );
 }
+
+@mixin mixin3 {
+	color: red;
+	font-size: 25px;
+	font-weight: bold;
+	border: 5px solid rgb(6, 6, 15);
+  }
+  @mixin mixin4 {
+	font-family: 'Times New Roman', Times, serif;
+  }
+  .animation__bloc{
+	  @include mixin3;
+	  background-color: green;
+  }
+.formation__titre{
+	@include mixin4;
+}
+.animationGroupe2{
+	@include mixin3;
+	justify-content: center;
+	display: flex;
+}

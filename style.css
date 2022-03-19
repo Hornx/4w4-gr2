@@ -465,6 +465,27 @@ a:hover, a:active {
   outline: 0;
 }
 
+.animation__bloc {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 5px solid #06060f;
+  background-color: green;
+}
+
+.formation__titre {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.animationGroupe2 {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 5px solid #06060f;
+  justify-content: center;
+  display: flex;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
