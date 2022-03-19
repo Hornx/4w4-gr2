@@ -1,9 +1,9 @@
-# Exrcice #1 - 4W4 - Conception d'interface et développement Web
-### Auteur : Eddy Martin
-### Date de remise : 11 février 2022
+# TP1- 4W4 - Conception d'interface et développement Web
+### Auteur : Gilles Marc-AAnderson
+### Date de remise : 19 mars 2022
 
 ```
-Cet exercice nous a permis d'introduire la structure d'un thème Wordpress. Voici la structure utilisée:
+Ce TP1 nous a permis d'introduire la structure d'un thème Wordpress. Voici la structure utilisée:
 -Pour le style css nous avons utilisé Sass
 -Les fonctions du thème se trouvent dans «functions.php»
 -Les modèle principal est : «index.php»

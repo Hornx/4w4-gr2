@@ -21,7 +21,7 @@
         
         <section class="footer__auteur"></section>
     </div>
-
+    <!-- auteur-->
     <p class="footer__presentation">Un site web fait par une élève du TIM à l'aide de Wordpress.</p>
     <h3 class="footer__author">Fait par Marc-Anderson Gilles</h3>
     
@@ -36,7 +36,7 @@ wp_nav_menu(array(
 
                     "link_before"=>$icone)); ?>
                     <?php get_search_form(); ?>
-
+        <!-- section textes footer(copyright,adresse,texte) -->
         <section class="resume" >
             <div class="resumeFooter" ><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p></div>
             <div class="resumeFooter"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p></div>

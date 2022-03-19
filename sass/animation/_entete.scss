@@ -1,3 +1,23 @@
+/*Ajout des keyframes pour les animations pour les inclurent dans les classes */
+@keyframes animationBloc {
+    0%   {color:rgb(255, 255, 255); }
+    25%  {color:yellow; }
+    50%  {color:blue; }
+    75%  {color:green; }
+    100% {color:rgb(255, 255, 255); }
+  }
+
+@keyframes anim-entete {
+    0% {
+      transform : translateY(-100vh);  
+    }
+    
+    100% {
+        transform : translateY(10);  
+    }
+}
+
+/*Les animations qui seont intégrer sur la page web */
 .animation{
     display : flex;
     justify-content: space-between;
@@ -26,23 +46,7 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
 }
-@keyframes animationBloc {
-    0%   {color:rgb(255, 255, 255); }
-    25%  {color:yellow; }
-    50%  {color:blue; }
-    75%  {color:green; }
-    100% {color:rgb(255, 255, 255); }
-  }
 
-@keyframes anim-entete {
-    0% {
-      transform : translateY(-100vh);  
-    }
-    
-    100% {
-        transform : translateY(10);  
-    }
-}
 
 .formation__cours:hover{
     color:white;
