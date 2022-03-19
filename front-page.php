@@ -1,6 +1,6 @@
 <?php get_header() ?>
 <main class="site__main">
-<h1>Groupe #2</h1>
+<h1 class="animationGroupe2">Groupe #2</h1>
 <section class="animation">
     <div class="animation__bloc">1</div>
     <div class="animation__bloc">2</div>
