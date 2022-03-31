@@ -20,6 +20,7 @@ VARIABLES
 /* ---------------- LIENS  DU MENU PRINCIPAL*/
 /* ---------------- LIENS HEADER titre principal du site */
 /* ---------------- FONT */
+/* ---------------- Boutons / Liens / Menus */
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -735,6 +736,30 @@ COMPOSANTES
 .erreur-404 {
   font-size: 5rem;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+/*-------------------------------------------
+Navigation categorie cours
+--------------------------------------------- */
+.menu-categorie_cours-container .menu {
+  display: flex;
+}
+
+.menu-categorie_cours-container .menu .menu-item {
+  margin: 0 10px;
+  background-color: #203b25;
+}
+
+.menu-categorie_cours-container .menu .menu-item a {
+  color: #23be3d;
+}
+
+.menu-categorie_cours-container .menu .menu-item:hover {
+  background-color: #143019;
+}
+
+.menu-categorie_cours-container .menu .menu-item:hover a {
+  color: #f1f1f1;
 }
 
 /* ---------------------------------------------------------
