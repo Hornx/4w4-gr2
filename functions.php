@@ -15,7 +15,7 @@ add_action('after_setup_theme', 'cidw_4w4_add_theme_support');
 function cidw_4w4_enqueue(){
     //wp_enqueue_style('style_css', get_stylesheet_uri());
     wp_enqueue_style('4w4-le-style', get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'), false);
-
+    wp_enqueue_style('cidw-4w4-police-google',"https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300;400;500&family=Roboto&display=swap");
      /*wp_enqueue_style('cidw4-4w4-google-font ', "https://fonts.googleapis.com/css2?family=Roboto&display=swap", false));*/
 }
 
@@ -137,6 +137,20 @@ function my_register_sidebars() {
         )
     );
 
+    add_action( 'widgets_init', 'my_register_sidebars' );
     /* Repeat register_sidebar() code for additional sidebars. */
+
+    
 }
 
+/* ----------------------------------------------------------------- */
+function trouve_la_categorie($tableau){
+    foreach($tableau as $cle){
+        if(is_category($cle)) return($cle);
+    }
+}
+
+
+
+
+?>
