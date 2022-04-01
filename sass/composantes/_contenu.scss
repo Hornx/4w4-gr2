@@ -9,16 +9,19 @@
 .formation {
     display: flex;
     flex-direction: column;
-
+    padding: 10px 15px;
+    
     &__titre {
         font-size: 2rem;
         color: $color__font-main;
         margin: 10px 0px;
         font-family: $font__titre;
+        
     }
     &__liste {
         display: flex;
         flex-wrap: wrap;
+        
     }
     
     &__cours {
@@ -49,6 +52,7 @@
     font-size: 1.5rem;
     color: $color__font-main;
     margin: 5px 0px;
+    
 }
 
 .cours__sigle {
