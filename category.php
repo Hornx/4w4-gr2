@@ -2,6 +2,7 @@
 <main class="principal">
     
     <section class="formation">
+        <?php if (is_category(array('cours', 'creation-3d','web','jeu','design','utilitaire','video'))): ?>
         <h2 class="formation__titre">Liste des cours du programme TIM</h2>
         
         <?php wp_nav_menu(array(
@@ -17,6 +18,8 @@
                 
 
                 ?>
+                <?php get_template_part('gabarit/content','cours'); ?>
+                
 
 
                 <article class="formation__cours <?php echo $categories[1]->slug;  ?>">
@@ -42,5 +45,6 @@
                 <?php endif ?>
         </div>
     </section>
+    <?php endif; //if (is_category('cours')))?> 
 </main>
 <?php get_footer() ?>

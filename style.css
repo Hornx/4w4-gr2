@@ -762,6 +762,15 @@ Navigation categorie cours
   color: #f1f1f1;
 }
 
+.menu-menu_accueil.container .menu-item a {
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.menu-menu_accueil.container .menu-item a .menu-item-description {
+  font-size: 1rem;
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
