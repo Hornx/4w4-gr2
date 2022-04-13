@@ -779,11 +779,11 @@ Navigation categorie cours
 
 .menu-categorie_cours-container .menu .menu-item {
   margin: 0 10px;
-  background-color: #203b25;
+  background-color: #040f06;
 }
 
 .menu-categorie_cours-container .menu .menu-item a {
-  color: #23be3d;
+  color: white;
 }
 
 .menu-categorie_cours-container .menu .menu-item:hover {
@@ -802,27 +802,56 @@ Navigation categorie cours
   color: #f3e98e;
 }
 
-.menu-menu_accueil.container .menu,
-.menu-evenement-container .menu {
+.menu-menu_accueil-container .menu {
   display: flex;
+  justify-content: space-around;
 }
 
-.menu-menu_accueil.container .menu-item a,
-.menu-evenement-container .menu-item a {
-  background-color: #2afa00;
-  color: #23be3d;
+.menu-menu_accueil-container .accueil_web .menu-item-icone {
+  background-image: url("fdfdfdf");
+}
+
+.menu-menu_accueil-container .menu-item {
+  width: 15%;
+  padding: 10px;
+  background-color: #040f06;
+}
+
+.menu-menu_accueil-container .menu-item a {
+  color: white;
   font-size: 2rem;
+  height: 100%;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.menu-menu_accueil.container .menu-item a .menu-item-description,
-.menu-evenement-container .menu-item a .menu-item-description {
+.menu-menu_accueil-container .menu-item a hr {
+  width: 90%;
+}
+
+.menu-menu_accueil-container .menu-item a .menu-item-description {
   font-size: 1rem;
 }
 
-.menu-menu_accueil.container .menu-item a:hover,
-.menu-evenement-container .menu-item a:hover {
-  background-color: #203b25;
+.menu-menu_accueil-container .menu-item a .menu-item-icone {
+  border: 1px solid white;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-top: auto;
+}
+
+.menu-menu_accueil-container .menu-item a:hover {
+  background-color: #143019;
+}
+
+.menu-menu_accueil-container .menu-item a:hover a {
+  color: #f1f1f1;
 }
 
 /* ---------------------------------------------------------

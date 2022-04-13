@@ -1,19 +1,49 @@
-.menu-menu_accueil.container,
- .menu-evenement-container{ //nav
+.menu-menu_accueil-container{ //nav
     .menu{//ul
         display: flex;
+        justify-content: space-around;
     }
+    .accueil_web .menu-item-icone{
+        background-image: url("fdfdfdf");
+    }
+    .accueil_animation3D .menu-item-icone{}
+    .accueil_page .menu-item-icone{}
+    .accueil__cours .menu-item-icone{}
     .menu-item{//li
+        width: 15%;
+        padding: 10px;
+        background-color: $color__bouton__background;
         a{
-            background-color: $color__background-main;
+            
             color:$color__bouton__color;
             font-size: 2rem;
+            height:100%;
             text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            hr{
+                width: 90%;
+            }
             .menu-item-description{//span
                 font-size: 1rem;
             }
+            .menu-item-icone{ //div
+                border: 1px solid white;
+                width: 2rem;
+                height: 2rem;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size:cover;
+                margin-top: auto;
+                 
+            }
             &:hover{
-                background-color: $color__bouton__background;
+                background-color: $color__bouton__background--hover;
+                a{
+                    color: $color__bouton__color--hover;
+                }
             }
         }
     }
