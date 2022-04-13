@@ -10,6 +10,7 @@
 <?php get_header() ?>
 <main class="site__main">
     <h1>---- Template evenement ------</h1>
+    <?php the_post_thumbnail(); ?>
    <?php if (have_posts()): the_post(); ?>
         <?php the_title() ?>
         <?php the_content() ?>        
