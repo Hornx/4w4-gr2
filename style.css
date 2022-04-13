@@ -517,6 +517,8 @@ COMPOSANTES
 
 .formation__cours {
   background-color: #38f558;
+  background-position: 97% 3%;
+  background-repeat: no-repeat;
   box-shadow: #394044 1px -1px 10px;
   border-radius: 5px;
   margin: 10px;
@@ -557,6 +559,34 @@ COMPOSANTES
 .pageParagraphe {
   border: 10px solid black;
   box-shadow: 10em 10em 11em;
+}
+
+.web {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=globe-bold");
+}
+
+.jeu {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=games");
+}
+
+.comm {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=users");
+}
+
+.design {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=color_lens");
+}
+
+.utilitaire {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools-bold");
+}
+
+.video {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=device-camera-video");
+}
+
+.creation-3d {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=view_in_ar");
 }
 
 .site__header {
@@ -609,6 +639,9 @@ COMPOSANTES
   position: absolute;
   transition: transform .3s;
   transform: rotate(0);
+  z-index: 99;
+  left: 10px;
+  top: 30px;
 }
 
 #chk-burger {
@@ -627,29 +660,22 @@ COMPOSANTES
   display: block;
 }
 
-.menu-principal-container {
-  padding: 30px 0 0 0;
-  background-color: #000105;
-}
-
-.menu-principal-container .menu {
+.menu {
   list-style-type: none;
   margin: 0;
+  padding: 0;
+  padding-top: 40px;
 }
 
-.menu-principal-container .menu-item {
+.menu-item {
   margin: 0;
   padding: 0;
 }
 
-.menu-principal-container .menu-item a {
+.menu-item a {
   display: block;
   text-decoration: none;
   padding: 4px;
-}
-
-.menu-principal-container .menu-item a:hover {
-  background-color: black;
 }
 
 @media screen and (min-width: 800px) {
@@ -659,6 +685,7 @@ COMPOSANTES
   .site .menu-principal-container {
     display: block;
   }
+  /* ----------------------------------------- */
   .home #burger {
     display: block;
   }
@@ -765,6 +792,14 @@ Navigation categorie cours
 
 .menu-categorie_cours-container .menu .menu-item:hover a {
   color: #f1f1f1;
+}
+
+.menu-categorie_cours-container .menu .menu-item .current-menu-item {
+  background-color: #06193d;
+}
+
+.menu-categorie_cours-container .menu .menu-item .current-menu-item a {
+  color: #f3e98e;
 }
 
 .menu-menu_accueil.container .menu,

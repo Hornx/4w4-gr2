@@ -1,0 +1,41 @@
+.recherche {
+    background-color: rgba(#000, .1);
+    width : 300px;
+    position : relative;
+
+    &__input{
+        background-color: transparent;
+        width : 100%;
+        transition : background-color .25s;
+        border : none;
+        outline: none;
+        &:focus {
+           background-color: rgba(#000, .2); 
+        }
+    }
+
+
+
+    &__bouton{
+        position : absolute;
+        top:0;
+        right:0;
+        display : flex;
+        align-items: center;
+        justify-content: center;
+
+        svg{
+            color : #000;
+        }
+    }
+
+}
+
+.wp_recherche .wp-block-search__button{
+    background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=search');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left :0;
+    width : 30px;
+    height :35px;
+}
