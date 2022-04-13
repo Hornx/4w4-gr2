@@ -8,6 +8,9 @@
         <?php wp_nav_menu(array(
             "menu" => "categories_cours",
             "container" => "nav")); ?>
+            
+           
+            
         
         <div class="formation__liste">
             <?php if (have_posts()):

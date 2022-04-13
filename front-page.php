@@ -13,6 +13,10 @@
   wp_nav_menu(array("menu" => "menu_accueil",
                     "container"=>"nav"));
 ?>
+<?php 
+  wp_nav_menu(array("menu" => "evenement",
+                    "container"=>"nav"));
+?>
 
 
   <!-- section contenuTexte avec le sidebar pour les images et video-->
