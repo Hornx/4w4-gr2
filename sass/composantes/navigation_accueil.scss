@@ -1,10 +1,11 @@
-.menu-menu_accueil-container{ //nav
+.menu-menu_accueil-container,
+.menu-evenement-container{ //nav
     .menu{//ul
         display: flex;
         justify-content: space-around;
     }
     .accueil_web .menu-item-icone{
-        background-image: url("fdfdfdf");
+        //background-image: url("fdfdfdf");
     }
     .accueil_animation3D .menu-item-icone{}
     .accueil_page .menu-item-icone{}
@@ -12,10 +13,10 @@
     .menu-item{//li
         width: 15%;
         padding: 10px;
-        background-color: $color__bouton__background;
+        //background-color: $color__bouton__background;
         a{
             
-            color:$color__bouton__color;
+            
             font-size: 2rem;
             height:100%;
             text-decoration: none;
@@ -40,15 +41,40 @@
                  
             }
             &:hover{
-                background-color: $color__bouton__background--hover;
+                
                 a{
-                    color: $color__bouton__color--hover;
+                    
                 }
             }
         }
     }
 } //fin .menu-accueil-container
 
-.menu-accueil-container{
-    
+.menu-evenement-container{
+    .menu-item{
+        background-color: $color__carte_evenement;
+
+        a{
+            color: $color__bouton__color--hover;
+        }
+        &:hover{
+            background-color: $color__bouton__color--hover ;
+        }
+    }
+}
+
+.menu-menu_accueil-container{
+    .menu-item{
+        background-color: $color__carte_evenement;
+
+        a{
+            color:$color__bouton__color;
+        }
+        &:hover{
+            background-color: $color__bouton__background--hover;
+            a{
+                color: $color__bouton__color--hover;
+            }
+        }
+    }
 }

@@ -13,6 +13,7 @@
   wp_nav_menu(array("menu" => "menu_accueil",
                     "container"=>"nav"));
 ?>
+<h2>Les évènemnts importants pour l'année</h2>
 <?php 
   wp_nav_menu(array("menu" => "evenement",
                     "container"=>"nav"));
