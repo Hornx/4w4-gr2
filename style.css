@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: TP1-Gilles-Marc-Anderson;
+theme name: 2022-4W4 Exercice #3-Gilles-Marc-Anderson;
 Author: Gilles Marc-Anderson
 Author URI: https://github.com/Hornx/4w4-lab4/tree/TP1
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
@@ -21,6 +21,7 @@ VARIABLES
 /* ---------------- LIENS HEADER titre principal du site */
 /* ---------------- FONT */
 /* ---------------- Boutons / Liens / Menus */
+/*------------------------ carte accueil*/
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -517,6 +518,8 @@ COMPOSANTES
 
 .formation__cours {
   background-color: #38f558;
+  background-position: 97% 3%;
+  background-repeat: no-repeat;
   box-shadow: #394044 1px -1px 10px;
   border-radius: 5px;
   margin: 10px;
@@ -557,6 +560,34 @@ COMPOSANTES
 .pageParagraphe {
   border: 10px solid black;
   box-shadow: 10em 10em 11em;
+}
+
+.web {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=globe-bold");
+}
+
+.jeu {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=games");
+}
+
+.comm {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=users");
+}
+
+.design {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=color_lens");
+}
+
+.utilitaire {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools-bold");
+}
+
+.video {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=device-camera-video");
+}
+
+.creation-3d {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=view_in_ar");
 }
 
 .site__header {
@@ -609,6 +640,9 @@ COMPOSANTES
   position: absolute;
   transition: transform .3s;
   transform: rotate(0);
+  z-index: 99;
+  left: 10px;
+  top: 30px;
 }
 
 #chk-burger {
@@ -627,29 +661,22 @@ COMPOSANTES
   display: block;
 }
 
-.menu-principal-container {
-  padding: 30px 0 0 0;
-  background-color: #000105;
-}
-
-.menu-principal-container .menu {
+.menu {
   list-style-type: none;
   margin: 0;
+  padding: 0;
+  padding-top: 40px;
 }
 
-.menu-principal-container .menu-item {
+.menu-item {
   margin: 0;
   padding: 0;
 }
 
-.menu-principal-container .menu-item a {
+.menu-item a {
   display: block;
   text-decoration: none;
   padding: 4px;
-}
-
-.menu-principal-container .menu-item a:hover {
-  background-color: black;
 }
 
 @media screen and (min-width: 800px) {
@@ -659,6 +686,7 @@ COMPOSANTES
   .site .menu-principal-container {
     display: block;
   }
+  /* ----------------------------------------- */
   .home #burger {
     display: block;
   }
@@ -745,49 +773,147 @@ COMPOSANTES
 /*-------------------------------------------
 Navigation categorie cours
 --------------------------------------------- */
-.menu-categorie_cours-container .menu {
+.menu-accueil-container .menu {
   display: flex;
   list-style-type: none;
 }
 
-.menu-categorie_cours-container .menu .menu-item {
+.menu-accueil-container .menu .menu-item {
   margin: 0 10px;
-  background-color: #203b25;
+  background-color: black;
 }
 
-.menu-categorie_cours-container .menu .menu-item a {
-  color: #23be3d;
+.menu-accueil-container .menu .menu-item a {
+  color: white;
 }
 
-.menu-categorie_cours-container .menu .menu-item:hover {
-  background-color: #143019;
+.menu-accueil-container .menu .menu-item:hover {
+  background-color: #040a14;
 }
 
-.menu-categorie_cours-container .menu .menu-item:hover a {
-  color: #f1f1f1;
+.menu-accueil-container .menu .menu-item:hover a {
+  color: #18eb0d;
 }
 
-.menu-menu_accueil.container .menu,
+.menu-accueil-container .menu .menu-item .current-menu-item {
+  background-color: #06193d;
+}
+
+.menu-accueil-container .menu .menu-item .current-menu-item a {
+  color: #f3e98e;
+}
+
+.menu-menu_accueil-container .menu,
 .menu-evenement-container .menu {
   display: flex;
+  justify-content: space-around;
 }
 
-.menu-menu_accueil.container .menu-item a,
+.menu-menu_accueil-container .accueil_web .menu-item-icone,
+.menu-evenement-container .accueil_web .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/loaders.svg?ic=audio");
+}
+
+.menu-menu_accueil-container .accueil_animation3D .menu-item-icone,
+.menu-evenement-container .accueil_animation3D .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+}
+
+.menu-menu_accueil-container .accueil_page .menu-item-icone,
+.menu-evenement-container .accueil_page .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+}
+
+.menu-menu_accueil-container .accueil__cours .menu-item-icone,
+.menu-evenement-container .accueil__cours .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+}
+
+.menu-menu_accueil-container .accueil_profs .menu-item-icone,
+.menu-evenement-container .accueil_profs .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+}
+
+.menu-menu_accueil-container .accueil_etudiants .menu-item-icone,
+.menu-evenement-container .accueil_etudiants .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+}
+
+.menu-menu_accueil-container .accueil_centre .menu-item-icone,
+.menu-evenement-container .accueil_centre .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+}
+
+.menu-menu_accueil-container .accueil_journee .menu-item-icone,
+.menu-evenement-container .accueil_journee .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+}
+
+.menu-menu_accueil-container .accueil_porte .menu-item-icone,
+.menu-evenement-container .accueil_porte .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+}
+
+.menu-menu_accueil-container .menu-item,
+.menu-evenement-container .menu-item {
+  width: 15%;
+  padding: 10px;
+}
+
+.menu-menu_accueil-container .menu-item a,
 .menu-evenement-container .menu-item a {
-  background-color: #2afa00;
-  color: #23be3d;
   font-size: 2rem;
+  height: 100%;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.menu-menu_accueil.container .menu-item a .menu-item-description,
+.menu-menu_accueil-container .menu-item a hr,
+.menu-evenement-container .menu-item a hr {
+  width: 90%;
+}
+
+.menu-menu_accueil-container .menu-item a .menu-item-description,
 .menu-evenement-container .menu-item a .menu-item-description {
   font-size: 1rem;
 }
 
-.menu-menu_accueil.container .menu-item a:hover,
-.menu-evenement-container .menu-item a:hover {
-  background-color: #203b25;
+.menu-menu_accueil-container .menu-item a .menu-item-icone,
+.menu-evenement-container .menu-item a .menu-item-icone {
+  border: 1px solid white;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-top: auto;
+}
+
+.menu-evenement-container .menu-item {
+  background-color: black;
+}
+
+.menu-evenement-container .menu-item a {
+  color: #18eb0d;
+}
+
+.menu-menu_accueil-container .menu-item {
+  background-color: black;
+}
+
+.menu-menu_accueil-container .menu-item a {
+  color: white;
+}
+
+.menu-menu_accueil-container .menu-item:hover {
+  background-color: #040a14;
+}
+
+.menu-menu_accueil-container .menu-item:hover a {
+  color: #18eb0d;
 }
 
 /* ---------------------------------------------------------

@@ -1,24 +1,102 @@
-.menu-menu_accueil.container,
- .menu-evenement-container{ //nav
+.menu-menu_accueil-container,
+.menu-evenement-container{ //nav
     .menu{//ul
         display: flex;
+        justify-content: space-around;
     }
+    .accueil_web .menu-item-icone{
+        background-image: url("https://s2.svgbox.net/loaders.svg?ic=audio");
+    }
+    .accueil_animation3D .menu-item-icone{
+        background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+    }
+    .accueil_page .menu-item-icone{
+        background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+    }
+    .accueil__cours .menu-item-icone{
+        background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+    }
+    .accueil_profs .menu-item-icone{
+        background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+    }
+    .accueil_etudiants .menu-item-icone{
+        background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+    }
+    .accueil_centre .menu-item-icone{
+        background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+    }
+    .accueil_journee .menu-item-icone{
+        background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+    }
+    .accueil_porte .menu-item-icone{
+        background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+    }
+    
     .menu-item{//li
+        width: 15%;
+        padding: 10px;
+        //background-color: $color__bouton__background;
         a{
-            background-color: $color__background-main;
-            color:$color__bouton__color;
+            
+            
             font-size: 2rem;
+            height:100%;
             text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            hr{
+                width: 90%;
+            }
             .menu-item-description{//span
                 font-size: 1rem;
             }
+            .menu-item-icone{ //div
+                border: 1px solid white;
+                width: 2rem;
+                height: 2rem;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size:cover;
+                margin-top: auto;
+                 
+            }
             &:hover{
-                background-color: $color__bouton__background;
+                
+                a{
+                    
+                }
             }
         }
     }
 } //fin .menu-accueil-container
 
-.menu-accueil-container{
-    
+.menu-evenement-container{
+    .menu-item{
+        background-color: $color__carte_evenement;
+       
+        a{
+            color: $color__bouton__color--hover;
+        }
+        &:hover{
+           
+        }
+    }
+}
+
+.menu-menu_accueil-container{
+    .menu-item{
+        background-color: $color__carte_evenement;
+
+        a{
+            color:$color__bouton__color;
+        }
+        &:hover{
+            background-color: $color__bouton__background--hover;
+            a{
+                color: $color__bouton__color--hover;
+            }
+        }
+    }
 }

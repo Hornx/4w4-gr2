@@ -3,6 +3,10 @@
     position : absolute;
     transition : transform .3s;
     transform : rotate(0);
+    z-index : 99;
+    left : 10px;
+    top : 30px;
+
 }
 
 #chk-burger {
@@ -20,25 +24,23 @@
 }
 
 
-.menu-principal-container{
-    padding :30px 0 0 0;
-    background-color: $color__background-link;
-    .menu{
-        list-style-type: none;
-        margin : 0;
-    
-    }
-    .menu-item{
-        margin:0;
-        padding : 0;
-        a{
-            display : block;
-            text-decoration: none;
-            padding : 4px;
-         
-            &:hover {
-                background-color: $color__background-link-hover;
-            }
+.menu-principal-container{}
+.menu{
+    list-style-type: none;
+    margin : 0;
+    padding :0;
+    padding-top : 40px;
+}
+.menu-item{
+    margin:0;
+    padding : 0;
+    a{
+        display : block;
+        text-decoration: none;
+        padding : 4px;
+        
+        &:hover {
+            
         }
     }
 }
@@ -47,19 +49,18 @@
    .site #burger {
         display : none;
     }
-   .site .menu-principal-container {
+    .site .menu-principal-container {
         display : block;
     }
-
+    /* ----------------------------------------- */
     .home #burger {
         display : block;
     }
-   .home .menu-principal-container {
+    .home .menu-principal-container {
         display : none;
     }
 
 
-    
 }
 
 

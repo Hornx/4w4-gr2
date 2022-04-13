@@ -37,7 +37,7 @@ add_action( 'after_setup_theme', 'cidw_4w4_register_nav_menu', 0 );
 function prefix_nav_description( $item_output, $item ) {
     if ( !empty( $item->description ) ) {
         $item_output = str_replace(  '</a>',
-        '<hr><span class="menu-item-description">' . $item->description . '</span>' .  '</a>',
+        '<hr><span class="menu-item-description">' . $item->description . '</span><div class="menu-item-icone"></div></a>',
               $item_output );
     }
     return $item_output;
@@ -144,12 +144,72 @@ function my_register_sidebars() {
 }
 
 /* ----------------------------------------------------------------- */
+ /**
+  * Extraire le slug de la catégorie de l'url 
+  * @param array $tableau : liste des slug de catégorie de la page
+  * @return string $cle : le slug de la catégorie  
+  */
 function trouve_la_categorie($tableau){
     foreach($tableau as $cle){
         if(is_category($cle)) return($cle);
     }
 }
 
+ /**
+ * Modifie la requête global de WP_query.
+ * 
+ * @param WP_query $query : Objet contenant la requête global.
+ * @return WP_query $query. 
+ */
+function cidw_4w4_pre_get_posts(WP_Query $query)
+{
+    if (is_admin() 
+        || !$query->is_main_query() 
+        || !$query->is_category(array('cours','web','jeu','design','utilitaire','creation-3d','video'))   )
+    {
+        return $query;
+    }        
+    else
+    {
+        $ordre = get_query_var('ordre','asc');
+        $cle = get_query_var('cletri','title');       
+        $query->set('order',  $ordre);
+        $query->set('orderby', $cle);
+        /*
+        $query->set('order',  'asc');
+        $query->set('orderby', 'title');
+        */
+        $query->set('postperpage','-1');
+        return $query;
+    }
+}
+
+
+
+function cidw_4w4_query_vars($params){
+// var_dump($params);
+// die();
+    $params[] = "ordre";
+    $params[] = "cletri";
+return $params;
+
+}
+/*
+    $params[] = "cletri";
+    $params[] = "ordre";
+    //$params["cletri"] = "title";
+    //var_dump($params); die();
+    return $params;
+}
+
+*/
+add_action('pre_get_posts', 'cidw_4w4_pre_get_posts');
+/* 
+Que le hook «pre_get_posts» se manisfeste juste avant que la requête WP_query soit exécuté. 
+Ce hook nous permettra d'adapter la requête avant d'exécuter cette requête 
+*/ 
+
+add_filter('query_vars', 'cidw_4w4_query_vars' );
 
 
 
