@@ -57,3 +57,32 @@
   animation-duration: 4s;
   font-family: $font__main;
 }
+
+.accueil_etudiants{
+  transition: width 2s, height 2s;
+    animation-name:animationTranslation ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+.accueil_centre{
+  transition: width 2s, height 2s;
+    animation-name:animationTranslation ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: relative;
+} 
+.accueil_journee{
+  transition: width 2s, height 2s;
+    animation-name:animationTranslation ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: relative;
+} 
+.accueil_porte{
+  transition: width 2s, height 2s;
+    animation-name:animationTranslation ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: relative;
+}

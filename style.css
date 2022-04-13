@@ -809,6 +809,51 @@ Navigation categorie cours
   justify-content: space-around;
 }
 
+.menu-menu_accueil-container .accueil_web .menu-item-icone,
+.menu-evenement-container .accueil_web .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/loaders.svg?ic=audio");
+}
+
+.menu-menu_accueil-container .accueil_animation3D .menu-item-icone,
+.menu-evenement-container .accueil_animation3D .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+}
+
+.menu-menu_accueil-container .accueil_page .menu-item-icone,
+.menu-evenement-container .accueil_page .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+}
+
+.menu-menu_accueil-container .accueil__cours .menu-item-icone,
+.menu-evenement-container .accueil__cours .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+}
+
+.menu-menu_accueil-container .accueil_profs .menu-item-icone,
+.menu-evenement-container .accueil_profs .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+}
+
+.menu-menu_accueil-container .accueil_etudiants .menu-item-icone,
+.menu-evenement-container .accueil_etudiants .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+}
+
+.menu-menu_accueil-container .accueil_centre .menu-item-icone,
+.menu-evenement-container .accueil_centre .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+}
+
+.menu-menu_accueil-container .accueil_journee .menu-item-icone,
+.menu-evenement-container .accueil_journee .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+}
+
+.menu-menu_accueil-container .accueil_porte .menu-item-icone,
+.menu-evenement-container .accueil_porte .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+}
+
 .menu-menu_accueil-container .menu-item,
 .menu-evenement-container .menu-item {
   width: 15%;
@@ -848,19 +893,15 @@ Navigation categorie cours
 }
 
 .menu-evenement-container .menu-item {
-  background-color: white;
+  background-color: black;
 }
 
 .menu-evenement-container .menu-item a {
   color: #18eb0d;
 }
 
-.menu-evenement-container .menu-item:hover {
-  background-color: #18eb0d;
-}
-
 .menu-menu_accueil-container .menu-item {
-  background-color: white;
+  background-color: black;
 }
 
 .menu-menu_accueil-container .menu-item a {

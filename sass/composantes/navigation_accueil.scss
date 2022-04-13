@@ -5,11 +5,33 @@
         justify-content: space-around;
     }
     .accueil_web .menu-item-icone{
-        //background-image: url("fdfdfdf");
+        background-image: url("https://s2.svgbox.net/loaders.svg?ic=audio");
     }
-    .accueil_animation3D .menu-item-icone{}
-    .accueil_page .menu-item-icone{}
-    .accueil__cours .menu-item-icone{}
+    .accueil_animation3D .menu-item-icone{
+        background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+    }
+    .accueil_page .menu-item-icone{
+        background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+    }
+    .accueil__cours .menu-item-icone{
+        background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+    }
+    .accueil_profs .menu-item-icone{
+        background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+    }
+    .accueil_etudiants .menu-item-icone{
+        background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+    }
+    .accueil_centre .menu-item-icone{
+        background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+    }
+    .accueil_journee .menu-item-icone{
+        background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+    }
+    .accueil_porte .menu-item-icone{
+        background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
+    }
+    
     .menu-item{//li
         width: 15%;
         padding: 10px;
@@ -53,12 +75,12 @@
 .menu-evenement-container{
     .menu-item{
         background-color: $color__carte_evenement;
-
+       
         a{
             color: $color__bouton__color--hover;
         }
         &:hover{
-            background-color: $color__bouton__color--hover ;
+           
         }
     }
 }
