@@ -803,64 +803,64 @@ Navigation categorie cours
   color: #f3e98e;
 }
 
-.menu-menu_accueil-container .menu,
+.menu-accueil-container .menu,
 .menu-evenement-container .menu {
   display: flex;
   justify-content: space-around;
 }
 
-.menu-menu_accueil-container .accueil_web .menu-item-icone,
+.menu-accueil-container .accueil_web .menu-item-icone,
 .menu-evenement-container .accueil_web .menu-item-icone {
   background-image: url("https://s2.svgbox.net/loaders.svg?ic=audio");
 }
 
-.menu-menu_accueil-container .accueil_animation3D .menu-item-icone,
+.menu-accueil-container .accueil_animation3D .menu-item-icone,
 .menu-evenement-container .accueil_animation3D .menu-item-icone {
   background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
 }
 
-.menu-menu_accueil-container .accueil_page .menu-item-icone,
+.menu-accueil-container .accueil_page .menu-item-icone,
 .menu-evenement-container .accueil_page .menu-item-icone {
   background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
 }
 
-.menu-menu_accueil-container .accueil__cours .menu-item-icone,
+.menu-accueil-container .accueil__cours .menu-item-icone,
 .menu-evenement-container .accueil__cours .menu-item-icone {
   background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
 }
 
-.menu-menu_accueil-container .accueil_profs .menu-item-icone,
+.menu-accueil-container .accueil_profs .menu-item-icone,
 .menu-evenement-container .accueil_profs .menu-item-icone {
   background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
 }
 
-.menu-menu_accueil-container .accueil_etudiants .menu-item-icone,
+.menu-accueil-container .accueil_etudiants .menu-item-icone,
 .menu-evenement-container .accueil_etudiants .menu-item-icone {
   background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
 }
 
-.menu-menu_accueil-container .accueil_centre .menu-item-icone,
+.menu-accueil-container .accueil_centre .menu-item-icone,
 .menu-evenement-container .accueil_centre .menu-item-icone {
   background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
 }
 
-.menu-menu_accueil-container .accueil_journee .menu-item-icone,
+.menu-accueil-container .accueil_journee .menu-item-icone,
 .menu-evenement-container .accueil_journee .menu-item-icone {
   background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
 }
 
-.menu-menu_accueil-container .accueil_porte .menu-item-icone,
+.menu-accueil-container .accueil_porte .menu-item-icone,
 .menu-evenement-container .accueil_porte .menu-item-icone {
   background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
 }
 
-.menu-menu_accueil-container .menu-item,
+.menu-accueil-container .menu-item,
 .menu-evenement-container .menu-item {
   width: 15%;
   padding: 10px;
 }
 
-.menu-menu_accueil-container .menu-item a,
+.menu-accueil-container .menu-item a,
 .menu-evenement-container .menu-item a {
   font-size: 2rem;
   height: 100%;
@@ -871,17 +871,17 @@ Navigation categorie cours
   align-items: center;
 }
 
-.menu-menu_accueil-container .menu-item a hr,
+.menu-accueil-container .menu-item a hr,
 .menu-evenement-container .menu-item a hr {
   width: 90%;
 }
 
-.menu-menu_accueil-container .menu-item a .menu-item-description,
+.menu-accueil-container .menu-item a .menu-item-description,
 .menu-evenement-container .menu-item a .menu-item-description {
   font-size: 1rem;
 }
 
-.menu-menu_accueil-container .menu-item a .menu-item-icone,
+.menu-accueil-container .menu-item a .menu-item-icone,
 .menu-evenement-container .menu-item a .menu-item-icone {
   border: 1px solid white;
   width: 2rem;
