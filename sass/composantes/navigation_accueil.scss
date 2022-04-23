@@ -35,7 +35,7 @@
     .menu-item{//li
         width: 15%;
         padding: 10px;
-        //background-color: $color__bouton__background;
+        
         a{
             
             
@@ -74,7 +74,7 @@
 
 .menu-evenement-container{
     .menu-item{
-        background-color: $color__carte_evenement;
+        background-color: $color__carte__evenement;
        
         a{
             color: $color__bouton__color--hover;
@@ -87,7 +87,7 @@
 
 .menu-menu_accueil-container{
     .menu-item{
-        background-color: $color__carte_evenement;
+        background-color: $color__carte__evenement;
 
         a{
             color:$color__bouton__color;
