@@ -9,7 +9,9 @@ for (const bout of cours__desc__ouvrir){
         console.log(this.parentNode.parentNode.classNamem)
         
         boite__modale.classList.add('ouvrir')
+        boite__modale.classList.remove('fermeture')
         console.log(boite__modale.classList)
+        
     })
 }
 })()

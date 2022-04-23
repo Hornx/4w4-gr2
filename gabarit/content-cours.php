@@ -22,7 +22,7 @@
             <?= $titreFiltreCours; ?>
         </a>
     </h3>
-    <p class="cours__sigle"><?= $sigleCours. "-" . $nbHeures . "heures"; ?> </p>
+    <div class="cours__nbre-heure"><?= $nbHeures; ?></div>
     <p class="cours__desc"> <?= $descCours; ?></p>
     <p class="cours__departement"> <?= $departement; ?></p>
     <?php  the_post_thumbnail("large"); ?>
