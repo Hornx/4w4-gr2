@@ -2,7 +2,7 @@
 /*
 theme name: 2022-4W4 Exercice #3-Gilles-Marc-Anderson;
 Author: Gilles Marc-Anderson
-Author URI: https://github.com/Hornx/4w4-lab4/tree/exercice-3
+Author URI: https://github.com/Hornx/4w4-lab4/tree/TP1
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -803,64 +803,64 @@ Navigation categorie cours
   color: #f3e98e;
 }
 
-.menu-menu_accueil-container .menu,
+.menu-accueil-container .menu,
 .menu-evenement-container .menu {
   display: flex;
   justify-content: space-around;
 }
 
-.menu-menu_accueil-container .accueil_web .menu-item-icone,
+.menu-accueil-container .accueil_web .menu-item-icone,
 .menu-evenement-container .accueil_web .menu-item-icone {
   background-image: url("https://s2.svgbox.net/loaders.svg?ic=audio");
 }
 
-.menu-menu_accueil-container .accueil_animation3D .menu-item-icone,
+.menu-accueil-container .accueil_animation3D .menu-item-icone,
 .menu-evenement-container .accueil_animation3D .menu-item-icone {
   background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
 }
 
-.menu-menu_accueil-container .accueil_page .menu-item-icone,
+.menu-accueil-container .accueil_page .menu-item-icone,
 .menu-evenement-container .accueil_page .menu-item-icone {
   background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
 }
 
-.menu-menu_accueil-container .accueil__cours .menu-item-icone,
+.menu-accueil-container .accueil__cours .menu-item-icone,
 .menu-evenement-container .accueil__cours .menu-item-icone {
   background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
 }
 
-.menu-menu_accueil-container .accueil_profs .menu-item-icone,
+.menu-accueil-container .accueil_profs .menu-item-icone,
 .menu-evenement-container .accueil_profs .menu-item-icone {
   background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
 }
 
-.menu-menu_accueil-container .accueil_etudiants .menu-item-icone,
+.menu-accueil-container .accueil_etudiants .menu-item-icone,
 .menu-evenement-container .accueil_etudiants .menu-item-icone {
   background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
 }
 
-.menu-menu_accueil-container .accueil_centre .menu-item-icone,
+.menu-accueil-container .accueil_centre .menu-item-icone,
 .menu-evenement-container .accueil_centre .menu-item-icone {
   background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
 }
 
-.menu-menu_accueil-container .accueil_journee .menu-item-icone,
+.menu-accueil-container .accueil_journee .menu-item-icone,
 .menu-evenement-container .accueil_journee .menu-item-icone {
   background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
 }
 
-.menu-menu_accueil-container .accueil_porte .menu-item-icone,
+.menu-accueil-container .accueil_porte .menu-item-icone,
 .menu-evenement-container .accueil_porte .menu-item-icone {
   background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
 }
 
-.menu-menu_accueil-container .menu-item,
+.menu-accueil-container .menu-item,
 .menu-evenement-container .menu-item {
   width: 15%;
   padding: 10px;
 }
 
-.menu-menu_accueil-container .menu-item a,
+.menu-accueil-container .menu-item a,
 .menu-evenement-container .menu-item a {
   font-size: 2rem;
   height: 100%;
@@ -871,17 +871,17 @@ Navigation categorie cours
   align-items: center;
 }
 
-.menu-menu_accueil-container .menu-item a hr,
+.menu-accueil-container .menu-item a hr,
 .menu-evenement-container .menu-item a hr {
   width: 90%;
 }
 
-.menu-menu_accueil-container .menu-item a .menu-item-description,
+.menu-accueil-container .menu-item a .menu-item-description,
 .menu-evenement-container .menu-item a .menu-item-description {
   font-size: 1rem;
 }
 
-.menu-menu_accueil-container .menu-item a .menu-item-icone,
+.menu-accueil-container .menu-item a .menu-item-icone,
 .menu-evenement-container .menu-item a .menu-item-icone {
   border: 1px solid white;
   width: 2rem;
@@ -914,6 +914,26 @@ Navigation categorie cours
 
 .menu-menu_accueil-container .menu-item:hover a {
   color: #18eb0d;
+}
+
+.boite__modale {
+  position: fixed;
+  top: 25vh;
+  left: 25vw;
+  border: 5px solid gray;
+  background-color: red;
+  width: 50vw;
+  height: 50vh;
+  transform: scale(0);
+  transition: all 1s ease-in-out;
+}
+
+.ouvrir {
+  transform: scale(1);
+}
+
+.evenement__resume {
+  background-color: aqua;
 }
 
 /* ---------------------------------------------------------
@@ -1000,6 +1020,7 @@ theme name: Lab 2 Lemieux Florence
 .site {
   background-color: #080d1b;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  position: relative;
 }
 
 .home::after {
@@ -1039,26 +1060,18 @@ theme name: Lab 2 Lemieux Florence
 .site {
   display: grid;
   grid-template-columns: auto;
-  grid-template-areas: "sidebar"
- "header"
- "main"
- "footer";
+  grid-template-areas: "sidebar" "header" "main" "footer";
 }
 
 @media screen and (min-width: 800px) {
   .site {
     grid-template-columns: 300px auto;
-    grid-template-areas: "header header"
- "sidebar main"
- "footer footer";
+    grid-template-areas: "header header" "sidebar main" "footer footer";
   }
   .home {
     display: grid;
     grid-template-columns: auto;
-    grid-template-areas: "sidebar"
- "header"
- "main"
- "footer";
+    grid-template-areas: "sidebar" "header" "main" "footer";
   }
 }
 /*# sourceMappingURL=style.css.map */
