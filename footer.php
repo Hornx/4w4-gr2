@@ -11,6 +11,9 @@
             <?php get_sidebar( 'footer_colonne_3' ); ?>
         </section>
     </div>
+    <section>
+        
+    </section>
     <!-- section de plusieurs lignes -->
     <div class="site__footer__ligne">
         <section class="footer__description"></section>
@@ -55,7 +58,7 @@ wp_nav_menu(array(
 
 <div class="boite__modale">
     <button class="boite__modale__fermeture">X</button>
-    <p class="boite__modale__fermeture">
+    <p  class="boite__modale__texte">
         Ceci est un premier test boîte modale
     </p>
 </div>
