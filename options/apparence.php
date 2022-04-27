@@ -52,8 +52,6 @@ add_action('customize_register', function(WP_Customize_Manager $manager){
                         "label"=>l'étiquette de la variable dans le formulaire  ]));
 
 */
-    $manager->add_control(new WP_Customize_Color_Control($manager, 'background_body',[
-    "section"=>"modifiter_background_body",
-    "label"=>"Couleur du background de body"]));
+    
 });
 ?>

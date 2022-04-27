@@ -9,6 +9,7 @@
     <div class="animation__bloc">4</div>
     <div class="animation__bloc">5</div>
 </section>
+<h2>L'accueil au cégep</h2>
 <?php 
   wp_nav_menu(array("menu" => "menu_accueil",
                     "container"=>"nav"));
