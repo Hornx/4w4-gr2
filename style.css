@@ -725,6 +725,18 @@ COMPOSANTES
 .resume {
   display: flex;
   align-items: flex-end;
+  padding: 20px;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+}
+
+.copyright h3 {
+  text-align: center;
+  align-items: center;
+  padding-left: 30px;
 }
 
 .site__footer {
@@ -1097,13 +1109,6 @@ ANIMATION
   100% {
     color: red;
   }
-}
-
-.resumeFooter p {
-  animation: animationCouleur 5s;
-  animation-name: animationCouleur;
-  animation-duration: 4s;
-  animation-iteration-count: 3;
 }
 
 .footer__author:hover {

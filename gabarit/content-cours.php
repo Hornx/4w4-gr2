@@ -26,7 +26,7 @@
         </a>
     </h3>
     <div class="cours__nbre-heure"><?= $nbHeures; ?></div>
-    <p class="cours__desc"> <?= $descCours; ?></p>
+    <p class="cours__sigle"> <?= $sigleCours; ?></p>
     <p class="cours__desc"> <?= wp_trim_words($descCours,15,"<button class='cours__desc__ouvrir'> La suite </button>"); ?></p>
     <p class="cours__departement"> <?= $departement; ?></p>
     <?php  the_post_thumbnail("large"); ?>

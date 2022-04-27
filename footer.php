@@ -57,7 +57,7 @@ wp_nav_menu(array(
         <h3>3 800, rue Sherbrooke Est Montréal (Québec) H1X 2A2 | 514 254-7131</h3>
         </section>
         <section class="copyright">
-        <h3>Copyright © 2022, Tous droits réservés TIM</h3>
+        <h3 class="test3">Copyright © 2022, Tous droits réservés TIM</h3>
         </section>
         
 </footer>

@@ -28,7 +28,18 @@
 .resume{
   display: flex;
   align-items: flex-end;
+  padding: 20px;
 }
+.copyright{
+  display: flex;
+flex-direction: row;
+}
+.copyright h3{
+  text-align: center;
+  align-items: center;
+  padding-left: 30px;
+}
+
 
 
 

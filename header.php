@@ -16,8 +16,9 @@
 <body  <?php body_class("site"); ?> style="background-color:<?= get_theme_mod('background_body');?>;">
 <header class="site__header">
     <section class="site__header__titre">
+        
         <?= get_custom_logo(); ?>
-        <h1 class="header__titre">
+        <h1 class="header__titre"><img src="../exer-4-Gilles-Marc-Anderson/images/logo.png" >
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">    
                 <?php bloginfo('name'); ?></h1>
             </a>
