@@ -45,7 +45,13 @@ wp_nav_menu(array(
             <div class="resumeFooter"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p></div>
             <div class="resumeFooter"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p></div>
             <div class="resumeFooter"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p></div>
-        </section>            
+        </section>
+        <section class="resume" >
+            <div class="resumeFooter" ><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p></div>
+            <div class="resumeFooter"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p></div>
+            <div class="resumeFooter"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p></div>
+            <div class="resumeFooter"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p></div>
+        </section>              
         <section class="adresseCollege">
    
         <h3>3 800, rue Sherbrooke Est Montréal (Québec) H1X 2A2 | 514 254-7131</h3>

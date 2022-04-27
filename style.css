@@ -722,6 +722,11 @@ COMPOSANTES
   align-items: center;
 }
 
+.resume {
+  display: flex;
+  align-items: flex-end;
+}
+
 .site__footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   background-color: #070807;
@@ -946,8 +951,34 @@ Navigation categorie cours
   transform: translate(-50%, -50%);
   width: 80%;
   height: 80%;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 30px;
+}
+
+@media screen and (max-width: 699px) {
+  .boite__modale__texte {
+    font-size: 5px;
+    overflow-wrap: break-word;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .boite__modale__texte {
+    font-size: 10px;
+    overflow-wrap: break-word;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .boite__modale__texte {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .boite__modale__texte {
+    font-size: 22px;
+  }
 }
 
 .ouvrir {
