@@ -31,7 +31,7 @@
     </section>
     
     <style>
-         <?php  get_theme_mod($background_body)?>
+         <?php  get_theme_mod($background_body);?>
     </style>
 </header>
 
