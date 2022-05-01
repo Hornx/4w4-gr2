@@ -26,7 +26,15 @@ add_action('customize_register', function(WP_Customize_Manager $manager){
                         ["section"=>"apparence_body",
                         "setting"=>"background_body",
                         "label"=>"La couleur du background body "
-                    ]);                                          
+                    ]);  
+    $manager->add_control(new WP_Customize_Color_Control($manager,'background_body_clippath',[
+        "section"=>"apparence_body",
+        "label"=>"La couleur du background clip-path "] ));
+        
+        $manager->add_control(new WP_Customize_Color_Control($manager,'background_body',[
+            "section"=>"apparence_body",
+            "label"=>"La couleur du background body "] ));  
+
 
 
 
