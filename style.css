@@ -945,6 +945,15 @@ Navigation categorie cours
   transition: all 1s ease-in-out;
 }
 
+.boite__modale__fermeture, .boite__carrousel__fermeture {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}
+
 .boite__modale__texte, .boite__carrousel__texte {
   margin: 0;
   position: absolute;
@@ -996,6 +1005,7 @@ Navigation categorie cours
 }
 
 .boite__carrousel img {
+  position: absolute;
   top: 0;
   left: 0;
   object-fit: cover;

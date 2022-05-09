@@ -13,7 +13,7 @@
     <?php wp_head() ?>
     <!-- style>
         .home::after{
-            background-color: ;
+            background-color:  ;
         }
 
         .site__main {
