@@ -933,7 +933,7 @@ Navigation categorie cours
   color: #18eb0d;
 }
 
-.boite__modale {
+.boite__modale, .boite__carrousel {
   position: fixed;
   top: 25vh;
   left: 25vw;
@@ -945,7 +945,7 @@ Navigation categorie cours
   transition: all 1s ease-in-out;
 }
 
-.boite__modale__texte {
+.boite__modale__texte, .boite__carrousel__texte {
   margin: 0;
   position: absolute;
   top: 50%;
@@ -959,27 +959,27 @@ Navigation categorie cours
 }
 
 @media screen and (max-width: 699px) {
-  .boite__modale__texte {
+  .boite__modale__texte, .boite__carrousel__texte {
     font-size: 5px;
     overflow-wrap: break-word;
   }
 }
 
 @media screen and (min-width: 700px) {
-  .boite__modale__texte {
+  .boite__modale__texte, .boite__carrousel__texte {
     font-size: 10px;
     overflow-wrap: break-word;
   }
 }
 
 @media screen and (min-width: 800px) {
-  .boite__modale__texte {
+  .boite__modale__texte, .boite__carrousel__texte {
     font-size: 15px;
   }
 }
 
 @media screen and (min-width: 1350px) {
-  .boite__modale__texte {
+  .boite__modale__texte, .boite__carrousel__texte {
     font-size: 22px;
   }
 }
@@ -988,8 +988,59 @@ Navigation categorie cours
   transform: scale(1);
 }
 
+.boite__carrousel {
+  top: 12.5%;
+  left: 12.5%;
+  width: 75%;
+  height: 75%;
+}
+
+.boite__carrousel img {
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.boite__carrousel__navigation {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+}
+
+.boite__carrousel__navigation button {
+  width: 20px;
+  height: 20px;
+  margin: 20px 10px;
+  border-radius: 100%;
+}
+
+.boite__carrousel__navigation button:focus {
+  background-color: black;
+}
+
 .evenement__resume {
   background-color: aqua;
+}
+
+.galerie {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+}
+
+@media screen and (min-width: 800px) {
+  .galerie {
+    width: 80%;
+  }
+}
+
+.home .site__main {
+  align-items: center;
 }
 
 /* ---------------------------------------------------------
@@ -1269,6 +1320,8 @@ theme name: Lab 2 Lemieux Florence
 .site__main {
   grid-area: main;
   background-color: rgba(42, 250, 0, 0.5);
+  display: flex;
+  flex-direction: column;
 }
 
 .site__footer {

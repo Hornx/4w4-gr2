@@ -2,13 +2,7 @@
 <main class="site__main">
 <h1 class="animationGroupe2">Groupe #2</h1>
 <!-- cercle pour les animations-->
-<section class="animation">
-    <div class="animation__bloc">1</div>
-    <div class="animation__bloc">2</div>
-    <div class="animation__bloc">3</div>
-    <div class="animation__bloc">4</div>
-    <div class="animation__bloc">5</div>
-</section>
+
 <h2>L'accueil au cégep</h2>
 <?php 
   wp_nav_menu(array("menu" => "menu_accueil",
