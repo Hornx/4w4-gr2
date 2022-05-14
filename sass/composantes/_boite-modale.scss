@@ -1,4 +1,9 @@
-.boite__modale, .boite__carrousel{
+/**
+* les deux boîtes modales   sont contrôlés en javascript par 
+* boite-modele.js et carrousel.js
+*/
+
+.boite__modale, .boite__carrousel{ // les propriétés commununes aux deux boîtes : modale et carrousel  
     position: fixed;
     top:25vh;
     left:25vw;
@@ -42,18 +47,34 @@
         font-size: 22px;
       }
     }
-    
+    // fin .boite__modale, .boite__carrousel
+
+// ouverture de la boîte modale (modal ou carrousel)
 
 }
 .ouvrir{
     transform: scale(1);
 }
 
+/* Spécifiquement les dimensions de la boite__modale */
+.boite__modale{
+  top: 25%;
+  left: 25%;
+  width : 50%;
+  height : 50%;
+}
+/* la boite__carrousel */
 .boite__carrousel{
   top: 12.5%;
   left: 12.5%;
   width : 75%;
   height : 75%;
+  @media screen and (min-width: $largeur__media--tablette) {   
+    top: 12.5%;
+    left: 12.5%;
+    width : 75%;
+    height : 75%;
+    }    
   img {
     position: absolute;
       top : 0;
