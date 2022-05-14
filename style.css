@@ -715,8 +715,19 @@ COMPOSANTES
 
 .resume {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   padding: 20px;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 800px) {
+  .resume .resume {
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    flex-direction: row;
+    color: red;
+  }
 }
 
 .copyright {

@@ -8,7 +8,7 @@
   *  */ 
     console.log("vive la boîte carousel");
    
-   
+    console.log("vive la boîte carousel");
 /* Le conteneur de la gallerie */
  let boite__carrousel = document.querySelector(".boite__carrousel")
  /* le conteneur des bouton de navigation du carrousel */
@@ -20,32 +20,21 @@
  /* La collection des images de la galerie */
  let galerie__img = document.querySelectorAll('.galerie img');
  // console.log(galerie__img.length);   
- 
- 
- /**
- * 
- * Écouteur pour fermer la fenêtre 
- * 
- */ 
+   
     boite__carrousel__fermeture.addEventListener('mousedown', function(){
        boite__carrousel.classList.remove('ouvrir')
    
     })
-
-    /**
- * parcourir l'ensemble des éléments de la galerie pour créer le carrousel
- *  
- * */ 
-   /* Creation d'une balise img qui sera intégré dans le carrousel */
+   
     let elmImg = document.createElement('img')
     boite__carrousel.append(elmImg)
-    let index = 0 // pour associer chaque bouton radio à une image de la galerie.
+    let index = 0
     for (const img of galerie__img) {
         let bouton = document.createElement('button')
         bouton.dataset.index = index++
-        boite__carrousel__navigation.append(bouton) // on ajoute l'élément img dans son conteneur
+        boite__carrousel__navigation.append(bouton)
         bouton.addEventListener('mousedown', function(){
-           elmImg.setAttribute('src', galerie__img[this.dataset.index].getAttribute('src')) // la source de l'image (url de l'image)
+           elmImg.setAttribute('src', galerie__img[this.dataset.index].getAttribute('src'))
         })
    
         console.log(img.tagName)

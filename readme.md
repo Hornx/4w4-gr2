@@ -3,42 +3,44 @@
 ### Date de remise : 19 mars 2022
 
 ```
-Ce TP1 nous a permis d'introduire la structure d'un thème Wordpress. Voici la structure utilisée:
-Développer un site constitué de plusieurs modèles qui permettront d’afficher dans un design original les pages suivantes :
-•	Une page d’accueil personnalisée : La page contiendra plusieurs animations permettant d’introduire et de souligner les principaux objectifs du site « Les cours du TIM »
-•	Une page de l’ensemble des cours du TIM : Le design amélioré de la grille de cours contiendra des filtres permettant d’afficher les cours dans un ordre spécifique (par session, par type de cours …). Chacune des cartes de cours permet d’accéder à une description complète du cours.
-•	Une page pour chacun des cours du TIM : le design amélioré de la page de cours permettra de mettre en valeur différentes caractéristique d’un cours : 
-o	La durée du cours
-o	Le sigle du cours
-o	La description du cours
-o	Une image mise en avant représentant le cours
 
-•	Le pied de page « footer » contiendra plusieurs zones dont :
-o	Une liste de liens externes contrôlé par un troisième menu de « wp_nav_menu() »
-o	Un menu permettant d’accéder à des pages d’information
-o	L’adresse du collège
-o	Mention de tout droit réservé, copyright 
-o	Une liste de résumés des denier articles
-o	Une zone de recherche
-o	Le pied de page doit contenir une section de colonnes et une section de lignes
-•	L’entête de la page contiendra :
-o	Le titre du site
-o	La description
-o	Des icônes de liens
-o	Une zone de recherche
+Github page : https://hornx.github.io/4w4-gr2/
 
-Critères spécifiques :
-•	Globalement le design de cette version devra être nettement amélioré
-•	De nouveaux « mixin » devront être créés et utilisé
-•	Des variables de couleurs devront être ajoutées avec des commentaires décrivant précisément la famille de couleur : couleurs des liens, couleurs du pied de page, couleurs de l’entête. Le nom des variables devra suivre le standard BEM.
-•	Un icone svg sera ajouté à chacun des choix de votre menu principal
-•	Des animations et transitions devront être développées et intégrées
-Le thème contiendra les modèles et gabarits suivants : 
-•	« category-cours.php » pour afficher la liste des cours
-•	« front-page.php » pour afficher la page d’accueil
-•	« single-post » pour afficher un article (un cours)
-•	« page.php » pour afficher une page standard
-•	Les templates : « header.php » et « footer.php »
+Ce TP2 nous a permis d'introduire la structure d'un thème Wordpress. Voici la structure utilisée:
+•	Une page d’accueil personnalisé les deux menus de série de blocs
+o	Deux menus de blocs de navigations permettant d’accéder aux pages :
+	Le département TIM
+•	Cours (Les cours du programme TIM)
+•	Centre d’aide
+•	Les profs (Les profs du département)
+•	Vie étudiantes (Les étudiants de TIM)
+	Événements (Les événements à venir)
+•	Journée d’accueil (Accueils des étudiants)
+•	Porte ouverte (Porte ouverte de décembre)
+•	Présentation des projets (Présentation des projets Web)
+•	Porte ouverte (Porte ouverte de février)
+o	Une galerie d’images de la vie étudiante
+•	La grille des cours améliorée
+o	Les titres de cours ne contiennent plus le sigle du département «582», «350» ou «393»
+o	Un nouveau champ personnalisé «Département» contiendra 3 radios bouton permettant de sélectionner entre : 
+	582 – TIM - Technique d’intégration multimédia
+	393 – TDD - Techniques de la documentation
+	350 -  PSY – Psychologie
+o	Le nom du département apparaîtra en bas du bloc
+o	Un lien sera ajouté à la fin du résumé de l’article
+	Ce lien permettra d’afficher la description complète de l’article dans une division apparaissant dynamiquement au milieu de la fenêtre. 
+•	Cette boîte modale sera animée 
+•	Permettra de faire défiler sans voir la barre de défilement « hide-scroll-bar-but-while-still-being-able-to-scroll »
+•	Un bouton «X» permettra de fermer la boîte modale
+•	Sur périphérique mobile la boîte modale prend tout l’espace du viewport
+
+
+•	Chacune des pages événements est conçue à partir d’un modèle de page « template-evenement » amélioré
+•	L’entête et le footer sont améliorés
+•	Un carrousel animé avec javascript/CSS. Ce carrousel pourra être intégré dans la page d’accueil ou dans toutes autres pages du site.
+•	Des fonctions de personnalisations devront être ajoutées dans l’admin « Personnaliser » 
+« Customizer Objects »
+•	Avant de remettre la version finale de votre TP2, créer un Github Page de votre page d’accueil pour la rendre visible à partir de votre dépôt github. 
 
 
 Pour modifier readme.md
