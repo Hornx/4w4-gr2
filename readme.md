@@ -6,41 +6,25 @@
 
 Github page : https://hornx.github.io/4w4-gr2/
 
-Ce TP2 nous a permis d'introduire la structure d'un thème Wordpress. Voici la structure utilisée:
-•	Une page d’accueil personnalisé les deux menus de série de blocs
-o	Deux menus de blocs de navigations permettant d’accéder aux pages :
-	Le département TIM
-•	Cours (Les cours du programme TIM)
-•	Centre d’aide
-•	Les profs (Les profs du département)
-•	Vie étudiantes (Les étudiants de TIM)
-	Événements (Les événements à venir)
-•	Journée d’accueil (Accueils des étudiants)
-•	Porte ouverte (Porte ouverte de décembre)
-•	Présentation des projets (Présentation des projets Web)
-•	Porte ouverte (Porte ouverte de février)
-o	Une galerie d’images de la vie étudiante
-•	La grille des cours améliorée
-o	Les titres de cours ne contiennent plus le sigle du département «582», «350» ou «393»
-o	Un nouveau champ personnalisé «Département» contiendra 3 radios bouton permettant de sélectionner entre : 
-	582 – TIM - Technique d’intégration multimédia
-	393 – TDD - Techniques de la documentation
-	350 -  PSY – Psychologie
-o	Le nom du département apparaîtra en bas du bloc
-o	Un lien sera ajouté à la fin du résumé de l’article
-	Ce lien permettra d’afficher la description complète de l’article dans une division apparaissant dynamiquement au milieu de la fenêtre. 
-•	Cette boîte modale sera animée 
-•	Permettra de faire défiler sans voir la barre de défilement « hide-scroll-bar-but-while-still-being-able-to-scroll »
-•	Un bouton «X» permettra de fermer la boîte modale
-•	Sur périphérique mobile la boîte modale prend tout l’espace du viewport
+Cette épreuve finale nous a permis d'introduire la structure d'un thème Wordpress. Voici la structure utilisée:
+Ce que vous devez réaliser
+1.	4 pages décrivant chacune un atelier de perfectionnement offert par le département
+a.	Le contenu de chaque page, mise à part le titre de la page, est entièrement défini par des champs personnalisés
+i.	Description de l’atelier (zone de texte)
+ii.	Animateur (texte)
+iii.	Date de début de l’atelier (date)
+iv.	Date de fin de l’atelier (date)
+v.	Jours de la semaine de l’atelier (un ou plusieurs jours : lundi, mardi …) (texte)
+vi.	Heure de début (heure)
+vii.	Heure de fin (heure)
+viii.	Durée d’une séance d’atelier (nombre)
+ix.	Local ou se déroulera l’atelier (texte)
+2.	Créer une nouvelle structure de menu animé permettant d’accéder aux pages décrivant les ateliers
+a.	Chaque item du menu contient
+i.	Titre
+ii.	Description
+iii.	Un icône
 
-
-•	Chacune des pages événements est conçue à partir d’un modèle de page « template-evenement » amélioré
-•	L’entête et le footer sont améliorés
-•	Un carrousel animé avec javascript/CSS. Ce carrousel pourra être intégré dans la page d’accueil ou dans toutes autres pages du site.
-•	Des fonctions de personnalisations devront être ajoutées dans l’admin « Personnaliser » 
-« Customizer Objects »
-•	Avant de remettre la version finale de votre TP2, créer un Github Page de votre page d’accueil pour la rendre visible à partir de votre dépôt github. 
 
 
 Pour modifier readme.md
