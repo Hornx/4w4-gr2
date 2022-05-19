@@ -13,6 +13,11 @@
   wp_nav_menu(array("menu" => "evenement",
                     "container"=>"nav"));
 ?>
+<h2>Les ateliers à venir</h2>
+<?php 
+  wp_nav_menu(array("menu" => "atelier",
+                    "container"=>"nav"));
+?>
 
 
   <!-- section contenuTexte avec le sidebar pour les images et video-->

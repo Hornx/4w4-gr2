@@ -1,5 +1,6 @@
 .menu-accueil-container,
-.menu-evenement-container{ //nav
+.menu-evenement-container,
+.menu-atelier-container{ //nav
     .menu{//ul
         display: flex;
         justify-content: space-around;
@@ -33,6 +34,19 @@
     }
     .accueil__porte .menu-item-icone{
         background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=academic-cap");
+    }
+//////////////////////////////////////////////////////////////////////Atelier icones
+    .accueil__css .menu-item-icone{
+        background-image: url("https://s2.svgbox.net/files.svg?ic=html");
+    }
+    .accueil__git .menu-item-icone{
+        background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=academic-cap");
+    }
+    .accueil__html .menu-item-icone{
+        background-image: url("https://s2.svgbox.net/files.svg?ic=css");
+    }
+    .accueil__react .menu-item-icone{
+        background-image: url("https://s2.svgbox.net/files.svg?ic=reactjs");
     }
     
     .menu-item{//li
@@ -100,6 +114,35 @@
             a{
                 color: $color__bouton__color--hover;
             }
+        }
+    }
+}
+.menu-atelier-container
+{
+    .menu-item{
+        background-color: $color__carte__evenement;
+
+        a{
+            color:$color__bouton__color;
+        }
+        &:hover{
+            background-color: $color__bouton__background--hover;
+            a{
+                color: $color__bouton__color--hover;
+            }
+        }
+    }
+}
+.menu-atelier-container{
+    .menu-item{
+        background-color: $color__carte__evenement;
+        
+       
+        a{
+            color: $color__bouton__color--hover;
+        }
+        &:hover{
+           
         }
     }
 }

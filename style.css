@@ -827,69 +827,106 @@ Navigation categorie cours
 }
 
 .menu-accueil-container .menu,
-.menu-evenement-container .menu {
+.menu-evenement-container .menu,
+.menu-atelier-container .menu {
   display: flex;
   justify-content: space-around;
 }
 
 .menu-accueil-container .accueil_web .menu-item-icone,
-.menu-evenement-container .accueil_web .menu-item-icone {
+.menu-evenement-container .accueil_web .menu-item-icone,
+.menu-atelier-container .accueil_web .menu-item-icone {
   background-image: url("https://s2.svgbox.net/files.svg?ic=apib2");
 }
 
 .menu-accueil-container .accueil_animation3D .menu-item-icone,
-.menu-evenement-container .accueil_animation3D .menu-item-icone {
+.menu-evenement-container .accueil_animation3D .menu-item-icone,
+.menu-atelier-container .accueil_animation3D .menu-item-icone {
   background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=desktop-computer");
 }
 
 .menu-accueil-container .accueil_page .menu-item-icone,
-.menu-evenement-container .accueil_page .menu-item-icone {
+.menu-evenement-container .accueil_page .menu-item-icone,
+.menu-atelier-container .accueil_page .menu-item-icone {
   background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=database");
 }
 
 .menu-accueil-container .accueil__cours .menu-item-icone,
-.menu-evenement-container .accueil__cours .menu-item-icone {
+.menu-evenement-container .accueil__cours .menu-item-icone,
+.menu-atelier-container .accueil__cours .menu-item-icone {
   background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=academic-cap");
 }
 
 .menu-accueil-container .accueil_profs .menu-item-icone,
-.menu-evenement-container .accueil_profs .menu-item-icone {
+.menu-evenement-container .accueil_profs .menu-item-icone,
+.menu-atelier-container .accueil_profs .menu-item-icone {
   background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=academic-cap");
 }
 
 .menu-accueil-container .accueil_etudiants .menu-item-icone,
-.menu-evenement-container .accueil_etudiants .menu-item-icone {
+.menu-evenement-container .accueil_etudiants .menu-item-icone,
+.menu-atelier-container .accueil_etudiants .menu-item-icone {
   background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=academic-cap");
 }
 
 .menu-accueil-container .accueil__etudiants .menu-item-icone,
-.menu-evenement-container .accueil__etudiants .menu-item-icone {
+.menu-evenement-container .accueil__etudiants .menu-item-icone,
+.menu-atelier-container .accueil__etudiants .menu-item-icone {
   background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=academic-cap");
 }
 
 .menu-accueil-container .accueil_centre .menu-item-icone,
-.menu-evenement-container .accueil_centre .menu-item-icone {
+.menu-evenement-container .accueil_centre .menu-item-icone,
+.menu-atelier-container .accueil_centre .menu-item-icone {
   background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=academic-cap");
 }
 
 .menu-accueil-container .accueil__journee .menu-item-icone,
-.menu-evenement-container .accueil__journee .menu-item-icone {
+.menu-evenement-container .accueil__journee .menu-item-icone,
+.menu-atelier-container .accueil__journee .menu-item-icone {
   background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=academic-cap");
 }
 
 .menu-accueil-container .accueil__porte .menu-item-icone,
-.menu-evenement-container .accueil__porte .menu-item-icone {
+.menu-evenement-container .accueil__porte .menu-item-icone,
+.menu-atelier-container .accueil__porte .menu-item-icone {
   background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=academic-cap");
 }
 
+.menu-accueil-container .accueil__css .menu-item-icone,
+.menu-evenement-container .accueil__css .menu-item-icone,
+.menu-atelier-container .accueil__css .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=html");
+}
+
+.menu-accueil-container .accueil__git .menu-item-icone,
+.menu-evenement-container .accueil__git .menu-item-icone,
+.menu-atelier-container .accueil__git .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=academic-cap");
+}
+
+.menu-accueil-container .accueil__html .menu-item-icone,
+.menu-evenement-container .accueil__html .menu-item-icone,
+.menu-atelier-container .accueil__html .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=css");
+}
+
+.menu-accueil-container .accueil__react .menu-item-icone,
+.menu-evenement-container .accueil__react .menu-item-icone,
+.menu-atelier-container .accueil__react .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=reactjs");
+}
+
 .menu-accueil-container .menu-item,
-.menu-evenement-container .menu-item {
+.menu-evenement-container .menu-item,
+.menu-atelier-container .menu-item {
   width: 15%;
   padding: 10px;
 }
 
 .menu-accueil-container .menu-item a,
-.menu-evenement-container .menu-item a {
+.menu-evenement-container .menu-item a,
+.menu-atelier-container .menu-item a {
   font-size: 2rem;
   height: 100%;
   text-decoration: none;
@@ -900,17 +937,20 @@ Navigation categorie cours
 }
 
 .menu-accueil-container .menu-item a hr,
-.menu-evenement-container .menu-item a hr {
+.menu-evenement-container .menu-item a hr,
+.menu-atelier-container .menu-item a hr {
   width: 90%;
 }
 
 .menu-accueil-container .menu-item a .menu-item-description,
-.menu-evenement-container .menu-item a .menu-item-description {
+.menu-evenement-container .menu-item a .menu-item-description,
+.menu-atelier-container .menu-item a .menu-item-description {
   font-size: 1rem;
 }
 
 .menu-accueil-container .menu-item a .menu-item-icone,
-.menu-evenement-container .menu-item a .menu-item-icone {
+.menu-evenement-container .menu-item a .menu-item-icone,
+.menu-atelier-container .menu-item a .menu-item-icone {
   border: 1px solid white;
   width: 2rem;
   height: 2rem;
@@ -941,6 +981,30 @@ Navigation categorie cours
 }
 
 .menu-menu_accueil-container .menu-item:hover a {
+  color: #18eb0d;
+}
+
+.menu-atelier-container .menu-item {
+  background-color: black;
+}
+
+.menu-atelier-container .menu-item a {
+  color: white;
+}
+
+.menu-atelier-container .menu-item:hover {
+  background-color: #040a14;
+}
+
+.menu-atelier-container .menu-item:hover a {
+  color: #18eb0d;
+}
+
+.menu-atelier-container .menu-item {
+  background-color: black;
+}
+
+.menu-atelier-container .menu-item a {
   color: #18eb0d;
 }
 
